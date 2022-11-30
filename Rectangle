@@ -1,0 +1,26 @@
+package praktikum5.soal1;
+
+public class Rectangle extends Shape{
+    private double length;  //panjang dalam satuan kaki
+    private double width;  //luas dalam satuan kaki
+  
+    //konstruktor untuk Rectangle. 
+    public Rectangle(double l, double w) 
+  {
+    super("Rectangle"); 
+    length = l;
+    width = w;
+  } 
+    
+  //rumus mengembalikan nilai luas permukaan Rectangle 
+  public double area() 
+  {
+    return length * width;
+  }
+  
+  //mengembalikan nilai Rectangle menjadi String 
+  public String toString() 
+  {
+    return super.toString() + " of length " + length + " and width " + width;
+  }
+}
