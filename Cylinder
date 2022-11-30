@@ -1,0 +1,24 @@
+package praktikum5.soal1;
+
+public class Cylinder extends Shape {
+  private double radius;  //radius dalam satuan kaki
+  private double height;  // tinggi dalam satuan kaku
+  // konstruktor objek Cylinder
+  public Cylinder(double r, double h) 
+  {
+    super("Cylinder"); 
+    radius = r;
+    height = h;
+  } 
+  //rumus mengembalikan nilai luas permukaan Cyclinder  
+  public double area() 
+  {
+    return Math.PI*radius*radius*height;
+  }
+
+  //mengembalikan nilai Cyclinder menjadi String 
+  public String toString() 
+  {
+    return super.toString() + " of radius " + radius + " and height " + height;
+  }
+}
