@@ -1,0 +1,24 @@
+package praktikum5.soal1;
+
+public class Sphere extends Shape {
+    
+    //atribut class Sphere
+    private double radius;
+    
+    //konstruktor
+    public Sphere(double r){
+        super("Sphere");
+        radius = r;
+    }
+    
+    //rumus mengembalikan nilai luas permukaan sphere
+    public double area(){
+        return 4*Math.PI*radius*radius;
+    }
+    
+    //mengembalikan nilai yang di simpan di sphere menjadi string
+    public String toString()
+    {
+        return super.toString() + " of radius " + radius;
+    }
+}
