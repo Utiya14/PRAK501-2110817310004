@@ -1,0 +1,19 @@
+package praktikum5.soal1;
+
+public class Paint {
+    private double coverage;  //nilai square dalam satuan kaki per galon
+  
+    //konstruktor
+    public Paint(double c) 
+  {
+    coverage = c;
+  } 
+    
+  //mengembalikan nilai untuk cat
+  //berfungsi sebagai parameter dalam mewarnai permukaan Shape 
+  public double amount(Shape s) 
+  {
+    System.out.println ("Computing amount for " + s);
+    return s.area() / coverage;
+  } 
+}
